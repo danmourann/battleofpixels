@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle of Pixels</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicione os scripts do Firebase compatíveis com ES5 -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <!-- Adicione Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <!-- Adicione Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <h1>
+                <span>B</span>
+                <span>A</span>
+                <span>T</span>
+                <span>T</span>
+                <span>L</span>
+                <span>E</span>
+                <span> </span>
+                <span>O</span>
+                <span>F</span>
+                <span> </span>
+                <span>P</span>
+                <span>I</span>
+                <span>X</span>
+                <span>E</span>
+                <span>L</span>
+                <span>S</span>
+            </h1>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/battleofpixelsofc/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@battleofpixelsofc" target="_blank" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="#">
+                    <img src="images/logo.png" target="_blank" class="logo-effect">
+                </a>
+                <span id="user-greeting" style="color: rgb(255, 255, 255); margin-left: 20px;"></span> <!-- Elemento movido aqui -->
+            </div>
+        </div>
+    </header>
+    
+    
+    <div id="pixel-board"></div>
+    <script src="script.js"></script>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <h2>Sobre o Projeto</h2>
+            <p>Este projeto foi desenvolvido com muito carinho por:</p>
+            <h3>Daniel Moura</h3>
+            <p>Obrigado por visitar! Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato.</p>
+            <p>🔗 <a href="mailto:battleofpixels0@gmail.com">Envie um e-mail</a></p>
+        </div>
+    </div>
+<!-- Modal de Boas-Vindas -->
+<div id="welcome-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" id="close-welcome-modal">&times;</span>
+        <h2>Bem-vindo ao Beta Test!</h2>
+        <p>Se você esta aqui, significa que foi um dos 6 escolhidos para o teste do game, parabens! Todas as artes feitas aqui serão usadas de cenario na versao oficial do jogo, então, capriche e dê o seu melhor <3</p>
+        <p>Por favor, insira sua assinatura:</p>
+        <input type="text" id="nick-input" placeholder="Digite seu nick aqui">
+        <button id="submit-nick">Enviar</button>
+        <p>A sua arte é apenas sua, os pixels usados ficarão com a sua assinatura!</p>
+    </div>
+</div>
+<!--<input type="color" id="color-picker" style="display: none;">-->
+<!--/<button id="color-confirm" style="display: none;">OK</button>-->
+
+<div id="color-picker-container" style="display: none;">
+    <p>Escolha a cor:</p>
+    <input type="color" id="color-picker">
+    <button id="color-confirm">OK</button>
+</div>
+</body>
+
+</html>
